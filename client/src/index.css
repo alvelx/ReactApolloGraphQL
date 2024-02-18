@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #2d70b3;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 5rem 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  border: 3px solid black;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  padding: 20px;
+  max-width: 1400px;
+}
+
+.People {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 2rem;
+  max-width: 1400px;
+  min-width: 400px;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1d4051;
+    background-color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .People {
+    min-width: unset;
+  }
+}
+
+.subTitle {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.text {
+  background-color: white;
+  padding: 0 10px;
+  z-index: 2;
+}
+
+.subTitle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 50%;
+  right: 0;
+  transform: translate(0, 80%);
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.carForm {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  gap: 1rem;
+}
+
+.listRecords {
+  width: 100%;
+} 
